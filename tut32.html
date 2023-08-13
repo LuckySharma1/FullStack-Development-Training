@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selector</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Edu+QLD+Beginner:wght@500;600;700&family=Edu+TAS+Beginner&family=Ibarra+Real+Nova:wght@700&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+
+        }
+        
+        header::before {
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .navigation {
+            font-family: 'Edu QLD Beginner', cursive;
+            font-size: 20px;
+            display: flex;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            font-family: 'Edu QLD Beginner', cursive;
+            justify-content: center;
+            height: 344px;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+        }
+
+        /* section::after{
+        content:"this is a content"
+    } */
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to codeing world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias sit laboriosam quos, qui tenetur
+            vel possimus libero magni facilis delectus earum, fugit et perferendis.</p>
+    </section>
+    
+</body>
+
+</html>
